@@ -1,0 +1,182 @@
+[
+  {
+    "alias": "non insulin dependent diabetes",
+    "normalized_alias": "non insulin dependent diabetes",
+    "canonical_text": "type 2 diabetes mellitus",
+    "normalized_canonical_text": "type 2 diabetes mellitus",
+    "preferred_code": "E119",
+    "notes": "Legacy shorthand for type 2 diabetes mellitus.",
+    "source": "diagnosis_aliases.json"
+  },
+  {
+    "alias": "high blood pressure",
+    "normalized_alias": "high blood pressure",
+    "canonical_text": "hypertension",
+    "normalized_canonical_text": "hypertension",
+    "preferred_code": "I10",
+    "notes": "Lay phrasing for hypertension.",
+    "source": "diagnosis_aliases.json"
+  },
+  {
+    "alias": "type ii diabetes",
+    "normalized_alias": "type ii diabetes",
+    "canonical_text": "type 2 diabetes mellitus",
+    "normalized_canonical_text": "type 2 diabetes mellitus",
+    "preferred_code": "E119",
+    "notes": "Roman numeral phrasing.",
+    "source": "diagnosis_aliases.json"
+  },
+  {
+    "alias": "diabetes",
+    "normalized_alias": "diabetes",
+    "canonical_text": "type 2 diabetes mellitus",
+    "normalized_canonical_text": "type 2 diabetes mellitus",
+    "preferred_code": "E119",
+    "notes": "Configured as a default shorthand for type 2 diabetes mellitus.",
+    "source": "diagnosis_aliases.json"
+  },
+  {
+    "alias": "a fib",
+    "normalized_alias": "a fib",
+    "canonical_text": "atrial fibrillation",
+    "normalized_canonical_text": "atrial fibrillation",
+    "preferred_code": "I4891",
+    "notes": "Spaced shorthand for atrial fibrillation.",
+    "source": "diagnosis_aliases.json"
+  },
+  {
+    "alias": "afib",
+    "normalized_alias": "afib",
+    "canonical_text": "atrial fibrillation",
+    "normalized_canonical_text": "atrial fibrillation",
+    "preferred_code": "I4891",
+    "notes": "Common shorthand for atrial fibrillation.",
+    "source": "diagnosis_aliases.json"
+  },
+  {
+    "alias": "copd",
+    "normalized_alias": "copd",
+    "canonical_text": "chronic obstructive pulmonary disease",
+    "normalized_canonical_text": "chronic obstructive pulmonary disease",
+    "preferred_code": "J449",
+    "notes": "Common shorthand for COPD.",
+    "source": "diagnosis_aliases.json"
+  },
+  {
+    "alias": "gerd",
+    "normalized_alias": "gerd",
+    "canonical_text": "gastro-esophageal reflux disease",
+    "normalized_canonical_text": "gastro esophageal reflux disease",
+    "preferred_code": "K219",
+    "notes": "Common shorthand for GERD.",
+    "source": "diagnosis_aliases.json"
+  },
+  {
+    "alias": "t2dm",
+    "normalized_alias": "t2dm",
+    "canonical_text": "type 2 diabetes mellitus",
+    "normalized_canonical_text": "type 2 diabetes mellitus",
+    "preferred_code": "E119",
+    "notes": "Alias for type 2 diabetes mellitus.",
+    "source": "diagnosis_aliases.json"
+  },
+  {
+    "alias": "cad",
+    "normalized_alias": "cad",
+    "canonical_text": "coronary artery disease",
+    "normalized_canonical_text": "coronary artery disease",
+    "preferred_code": "I2510",
+    "notes": "Common shorthand for coronary artery disease.",
+    "source": "diagnosis_aliases.json"
+  },
+  {
+    "alias": "chf",
+    "normalized_alias": "chf",
+    "canonical_text": "heart failure",
+    "normalized_canonical_text": "heart failure",
+    "preferred_code": "I509",
+    "notes": "Common shorthand for congestive heart failure.",
+    "source": "diagnosis_aliases.json"
+  },
+  {
+    "alias": "ckd",
+    "normalized_alias": "ckd",
+    "canonical_text": "chronic kidney disease",
+    "normalized_canonical_text": "chronic kidney disease",
+    "preferred_code": "N189",
+    "notes": "Common shorthand for CKD.",
+    "source": "diagnosis_aliases.json"
+  },
+  {
+    "alias": "dm2",
+    "normalized_alias": "dm2",
+    "canonical_text": "type 2 diabetes mellitus",
+    "normalized_canonical_text": "type 2 diabetes mellitus",
+    "preferred_code": "E119",
+    "notes": "Alias for type 2 diabetes mellitus.",
+    "source": "diagnosis_aliases.json"
+  },
+  {
+    "alias": "hld",
+    "normalized_alias": "hld",
+    "canonical_text": "hyperlipidemia",
+    "normalized_canonical_text": "hyperlipidemia",
+    "preferred_code": "E785",
+    "notes": "Common shorthand for hyperlipidemia.",
+    "source": "diagnosis_aliases.json"
+  },
+  {
+    "alias": "htn",
+    "normalized_alias": "htn",
+    "canonical_text": "hypertension",
+    "normalized_canonical_text": "hypertension",
+    "preferred_code": "I10",
+    "notes": "Common shorthand for hypertension.",
+    "source": "diagnosis_aliases.json"
+  },
+  {
+    "alias": "osa",
+    "normalized_alias": "osa",
+    "canonical_text": "obstructive sleep apnea",
+    "normalized_canonical_text": "obstructive sleep apnea",
+    "preferred_code": "G4733",
+    "notes": "Common shorthand for obstructive sleep apnea.",
+    "source": "diagnosis_aliases.json"
+  },
+  {
+    "alias": "uti",
+    "normalized_alias": "uti",
+    "canonical_text": "urinary tract infection",
+    "normalized_canonical_text": "urinary tract infection",
+    "preferred_code": "N390",
+    "notes": "Common shorthand for UTI.",
+    "source": "diagnosis_aliases.json"
+  },
+  {
+    "alias": "dm",
+    "normalized_alias": "dm",
+    "canonical_text": "type 2 diabetes mellitus",
+    "normalized_canonical_text": "type 2 diabetes mellitus",
+    "preferred_code": "E119",
+    "notes": "Common shorthand for diabetes mellitus.",
+    "source": "diagnosis_aliases.json"
+  },
+  {
+    "alias": "oa",
+    "normalized_alias": "oa",
+    "canonical_text": "osteoarthritis",
+    "normalized_canonical_text": "osteoarthritis",
+    "preferred_code": "M1990",
+    "notes": "Common shorthand for osteoarthritis.",
+    "source": "diagnosis_aliases.json"
+  },
+  {
+    "alias": "ra",
+    "normalized_alias": "ra",
+    "canonical_text": "rheumatoid arthritis",
+    "normalized_canonical_text": "rheumatoid arthritis",
+    "preferred_code": "M069",
+    "notes": "Common shorthand for rheumatoid arthritis.",
+    "source": "diagnosis_aliases.json"
+  }
+]

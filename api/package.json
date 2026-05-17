@@ -1,0 +1,10 @@
+{
+  "name": "freemedidata-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Azure Functions API for ICD-10 search",
+  "main": "search/index.js",
+  "engines": {
+    "node": ">=18"
+  }
+}

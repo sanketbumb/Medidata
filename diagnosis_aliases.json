@@ -1,0 +1,122 @@
+[
+  {
+    "alias": "diabetes",
+    "canonical_text": "type 2 diabetes mellitus",
+    "preferred_code": "E119",
+    "notes": "Configured as a default shorthand for type 2 diabetes mellitus."
+  },
+  {
+    "alias": "dm",
+    "canonical_text": "type 2 diabetes mellitus",
+    "preferred_code": "E119",
+    "notes": "Common shorthand for diabetes mellitus."
+  },
+  {
+    "alias": "dm2",
+    "canonical_text": "type 2 diabetes mellitus",
+    "preferred_code": "E119",
+    "notes": "Alias for type 2 diabetes mellitus."
+  },
+  {
+    "alias": "t2dm",
+    "canonical_text": "type 2 diabetes mellitus",
+    "preferred_code": "E119",
+    "notes": "Alias for type 2 diabetes mellitus."
+  },
+  {
+    "alias": "type ii diabetes",
+    "canonical_text": "type 2 diabetes mellitus",
+    "preferred_code": "E119",
+    "notes": "Roman numeral phrasing."
+  },
+  {
+    "alias": "non insulin dependent diabetes",
+    "canonical_text": "type 2 diabetes mellitus",
+    "preferred_code": "E119",
+    "notes": "Legacy shorthand for type 2 diabetes mellitus."
+  },
+  {
+    "alias": "htn",
+    "canonical_text": "hypertension",
+    "preferred_code": "I10",
+    "notes": "Common shorthand for hypertension."
+  },
+  {
+    "alias": "high blood pressure",
+    "canonical_text": "hypertension",
+    "preferred_code": "I10",
+    "notes": "Lay phrasing for hypertension."
+  },
+  {
+    "alias": "hld",
+    "canonical_text": "hyperlipidemia",
+    "preferred_code": "E785",
+    "notes": "Common shorthand for hyperlipidemia."
+  },
+  {
+    "alias": "cad",
+    "canonical_text": "coronary artery disease",
+    "preferred_code": "I2510",
+    "notes": "Common shorthand for coronary artery disease."
+  },
+  {
+    "alias": "chf",
+    "canonical_text": "heart failure",
+    "preferred_code": "I509",
+    "notes": "Common shorthand for congestive heart failure."
+  },
+  {
+    "alias": "copd",
+    "canonical_text": "chronic obstructive pulmonary disease",
+    "preferred_code": "J449",
+    "notes": "Common shorthand for COPD."
+  },
+  {
+    "alias": "ckd",
+    "canonical_text": "chronic kidney disease",
+    "preferred_code": "N189",
+    "notes": "Common shorthand for CKD."
+  },
+  {
+    "alias": "gerd",
+    "canonical_text": "gastro-esophageal reflux disease",
+    "preferred_code": "K219",
+    "notes": "Common shorthand for GERD."
+  },
+  {
+    "alias": "osa",
+    "canonical_text": "obstructive sleep apnea",
+    "preferred_code": "G4733",
+    "notes": "Common shorthand for obstructive sleep apnea."
+  },
+  {
+    "alias": "oa",
+    "canonical_text": "osteoarthritis",
+    "preferred_code": "M1990",
+    "notes": "Common shorthand for osteoarthritis."
+  },
+  {
+    "alias": "ra",
+    "canonical_text": "rheumatoid arthritis",
+    "preferred_code": "M069",
+    "notes": "Common shorthand for rheumatoid arthritis."
+  },
+  {
+    "alias": "uti",
+    "canonical_text": "urinary tract infection",
+    "preferred_code": "N390",
+    "notes": "Common shorthand for UTI."
+  },
+  {
+    "alias": "afib",
+    "canonical_text": "atrial fibrillation",
+    "preferred_code": "I4891",
+    "notes": "Common shorthand for atrial fibrillation."
+  },
+  {
+    "alias": "a fib",
+    "canonical_text": "atrial fibrillation",
+    "preferred_code": "I4891",
+    "notes": "Spaced shorthand for atrial fibrillation."
+  }
+]

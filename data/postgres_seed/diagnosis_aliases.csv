@@ -1,0 +1,21 @@
+alias,normalized_alias,canonical_text,normalized_canonical_text,preferred_code,notes,source
+non insulin dependent diabetes,non insulin dependent diabetes,type 2 diabetes mellitus,type 2 diabetes mellitus,E119,Legacy shorthand for type 2 diabetes mellitus.,diagnosis_aliases.json
+high blood pressure,high blood pressure,hypertension,hypertension,I10,Lay phrasing for hypertension.,diagnosis_aliases.json
+type ii diabetes,type ii diabetes,type 2 diabetes mellitus,type 2 diabetes mellitus,E119,Roman numeral phrasing.,diagnosis_aliases.json
+diabetes,diabetes,type 2 diabetes mellitus,type 2 diabetes mellitus,E119,Configured as a default shorthand for type 2 diabetes mellitus.,diagnosis_aliases.json
+a fib,a fib,atrial fibrillation,atrial fibrillation,I4891,Spaced shorthand for atrial fibrillation.,diagnosis_aliases.json
+afib,afib,atrial fibrillation,atrial fibrillation,I4891,Common shorthand for atrial fibrillation.,diagnosis_aliases.json
+copd,copd,chronic obstructive pulmonary disease,chronic obstructive pulmonary disease,J449,Common shorthand for COPD.,diagnosis_aliases.json
+gerd,gerd,gastro-esophageal reflux disease,gastro esophageal reflux disease,K219,Common shorthand for GERD.,diagnosis_aliases.json
+t2dm,t2dm,type 2 diabetes mellitus,type 2 diabetes mellitus,E119,Alias for type 2 diabetes mellitus.,diagnosis_aliases.json
+cad,cad,coronary artery disease,coronary artery disease,I2510,Common shorthand for coronary artery disease.,diagnosis_aliases.json
+chf,chf,heart failure,heart failure,I509,Common shorthand for congestive heart failure.,diagnosis_aliases.json
+ckd,ckd,chronic kidney disease,chronic kidney disease,N189,Common shorthand for CKD.,diagnosis_aliases.json
+dm2,dm2,type 2 diabetes mellitus,type 2 diabetes mellitus,E119,Alias for type 2 diabetes mellitus.,diagnosis_aliases.json
+hld,hld,hyperlipidemia,hyperlipidemia,E785,Common shorthand for hyperlipidemia.,diagnosis_aliases.json
+htn,htn,hypertension,hypertension,I10,Common shorthand for hypertension.,diagnosis_aliases.json
+osa,osa,obstructive sleep apnea,obstructive sleep apnea,G4733,Common shorthand for obstructive sleep apnea.,diagnosis_aliases.json
+uti,uti,urinary tract infection,urinary tract infection,N390,Common shorthand for UTI.,diagnosis_aliases.json
+dm,dm,type 2 diabetes mellitus,type 2 diabetes mellitus,E119,Common shorthand for diabetes mellitus.,diagnosis_aliases.json
+oa,oa,osteoarthritis,osteoarthritis,M1990,Common shorthand for osteoarthritis.,diagnosis_aliases.json
+ra,ra,rheumatoid arthritis,rheumatoid arthritis,M069,Common shorthand for rheumatoid arthritis.,diagnosis_aliases.json

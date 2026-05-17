@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FreeMediData ICD-10 Search</title>
+  <style>
+    :root {
+      --bg: #f3efe7;
+      --panel: rgba(255, 252, 247, 0.94);
+      --ink: #173042;
+      --muted: #5f6f7c;
+      --accent: #0f6d79;
+      --accent-soft: #d7eef1;
+      --line: #d7dbd3;
+      --shadow: 0 20px 48px rgba(23, 48, 66, 0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at top left, rgba(15, 109, 121, 0.16), transparent 28%),
+        linear-gradient(180deg, #f8f4eb 0%, var(--bg) 100%);
+    }
+    .shell {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    .panel {
+      border: 1px solid rgba(215, 219, 211, 0.9);
+      border-radius: 28px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .hero {
+      padding: 36px 32px 16px;
+      background:
+        linear-gradient(135deg, rgba(15, 109, 121, 0.1), rgba(15, 109, 121, 0.02)),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.97));
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2.1rem, 4vw, 3.4rem);
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+    .hero p {
+      margin: 0;
+      max-width: 760px;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 1.04rem;
+    }
+    .body {
+      padding: 28px 32px 32px;
+    }
+    form {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+    }
+    input {
+      width: 100%;
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+      color: var(--ink);
+      font-size: 1rem;
+      outline: none;
+    }
+    input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 4px rgba(15, 109, 121, 0.12);
+    }
+    button {
+      border: 0;
+      border-radius: 16px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 0 22px;
+      cursor: pointer;
+    }
+    .hint {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .pill {
+      background: #fff;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 9px 14px;
+    }
+    .results {
+      margin-top: 24px;
+      display: grid;
+      gap: 14px;
+    }
+    .card, .empty, .loading {
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.8);
+      padding: 18px;
+    }
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .code {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      padding: 6px 12px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .short {
+      font-weight: 700;
+      font-size: 1.04rem;
+    }
+    .long {
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .meta {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    @media (max-width: 720px) {
+      .shell { padding-top: 24px; }
+      .hero, .body { padding-left: 20px; padding-right: 20px; }
+      form { grid-template-columns: 1fr; }
+      button { padding: 15px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="panel">
+      <div class="hero">
+        <h1>FreeMediData ICD-10 Search</h1>
+        <p>Search ICD-10 codes by diagnosis description, partial wording, code fragment, or common shorthand such as HTN, DM2, T2DM, CAD, COPD, and more.</p>
+      </div>
+      <div class="body">
+        <form id="search-form">
+          <input id="query" type="text" placeholder="Try: HTN, DM2 neuropathy, high blood pressure, cholera vib" autocomplete="off">
+          <button type="submit">Search</button>
+        </form>
+        <div class="hint">The API is optimized for best-match ranking. Alias terms are expanded before search so provider shorthand can still resolve to the right ICD-10 code family.</div>
+        <div class="pills">
+          <button class="pill" type="button" data-query="HTN">HTN</button>
+          <button class="pill" type="button" data-query="DM2 neuropathy">DM2 neuropathy</button>
+          <button class="pill" type="button" data-query="high blood pressure">high blood pressure</button>
+          <button class="pill" type="button" data-query="cholera vib">cholera vib</button>
+        </div>
+        <section id="results" class="results">
+          <div class="empty">Enter a diagnosis description to see the best ICD-10 matches.</div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <script>
+    const form = document.getElementById("search-form");
+    const input = document.getElementById("query");
+    const results = document.getElementById("results");
+    const sampleButtons = document.querySelectorAll("[data-query]");
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#39;");
+    }
+
+    function renderItems(items, query) {
+      if (!items.length) {
+        results.innerHTML = `<div class="empty">No ICD-10 results were found for <strong>${escapeHtml(query)}</strong>.</div>`;
+        return;
+      }
+
+      results.innerHTML = items.map((item, index) => `
+        <article class="card">
+          <div class="card-top">
+            <span class="code">${escapeHtml(item.code)}</span>
+            <div class="short">${escapeHtml(item.short_description)}${index === 0 ? " (best match)" : ""}</div>
+          </div>
+          <div class="long">${escapeHtml(item.long_description)}</div>
+          <div class="meta">Relevance score: ${escapeHtml(item.score)}</div>
+        </article>
+      `).join("");
+    }
+
+    async function runSearch(query) {
+      const trimmed = query.trim();
+      if (!trimmed) {
+        results.innerHTML = '<div class="empty">Enter a diagnosis description to see the best ICD-10 matches.</div>';
+        return;
+      }
+
+      results.innerHTML = '<div class="loading">Searching ICD-10 data...</div>';
+      const response = await fetch(`/api/search?q=${encodeURIComponent(trimmed)}`);
+      const payload = await response.json();
+      renderItems(payload.results || [], trimmed);
+    }
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      runSearch(input.value);
+    });
+
+    sampleButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        input.value = button.dataset.query || "";
+        runSearch(input.value);
+      });
+    });
+  </script>
+</body>
+</html>
